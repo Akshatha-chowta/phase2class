@@ -8,7 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -24,7 +26,7 @@ public class SwagLab {
 	
 	SoftAssert soft=new SoftAssert();
 	
-	@BeforeMethod
+	@BeforeTest
 	public void setup() {
 	System.getProperty("webdriver.chrome.driver", "C:\\WebDriver\\WebProject");
 	 driver=new ChromeDriver();
@@ -80,7 +82,7 @@ public class SwagLab {
 		WebElement checkout =driver.findElement(By.id("checkout"));
 	}
 	
-	@AfterMethod
+	@AfterTest
 	public void teardown() {
 		report.endTest(test);
 		report.flush();
