@@ -2,9 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+<<<<<<< HEAD
   <classes>
       <class name="Test.logintest"/>
        
+=======
+    <classes>
+      <class name="Test.LoginTest"/>
+>>>>>>> 7c7b1fb54b48b21bf04bc14dbcc68bba5ce6c1e7
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

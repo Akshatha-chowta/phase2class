@@ -34,7 +34,11 @@ public class Baseclass {
 		System.getProperty("webdriver.chrome.driver", "chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		
+<<<<<<< HEAD
 		driver.get("https://www.saucedemo.com/");
+=======
+		driver.get("https://www.simplilearn.com/");
+>>>>>>> 7c7b1fb54b48b21bf04bc14dbcc68bba5ce6c1e7
 		
 		driver.manage().window().maximize();
 		

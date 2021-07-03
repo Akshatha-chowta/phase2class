@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="Test.logintest">
         <methods>
           <include name="LoginTestcase1"/>
@@ -10,6 +11,15 @@
           <include name="teardown"/>
         </methods>
       </class> <!-- Test.logintest -->
+=======
+      <class name="Test.LoginTest">
+        <methods>
+          <include name="LoginTestcase2"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Test.LoginTest -->
+>>>>>>> 7c7b1fb54b48b21bf04bc14dbcc68bba5ce6c1e7
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
